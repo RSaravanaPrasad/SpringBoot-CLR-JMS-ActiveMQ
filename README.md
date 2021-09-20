@@ -6,3 +6,6 @@
 5. Running consumer asynchronously java -jar activeMQ-consumer-1.0-SNAPSHOT.jar consumes the sent messages and prints on console.
 6. Methods for sending messages as String and DTO added.
 7. Actuator endpoints configured in application.properties
+
+
+<img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits">
