@@ -7,5 +7,3 @@
 6. Methods for sending messages as String and DTO added.
 7. Actuator endpoints configured in application.properties
 
-
-<img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits">
