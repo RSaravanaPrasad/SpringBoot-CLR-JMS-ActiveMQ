@@ -1,4 +1,4 @@
-# Spring Boot JMS ActiveMQ Producer
+# Spring Boot JMS ActiveMQ Producer client
 
 1. Producer built and run as a separate CommandLineRunner.
 2. Sends one message in JSON format to a queue in ActiveMQ.
