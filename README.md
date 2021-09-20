@@ -6,3 +6,10 @@
 5. Running consumer asynchronously java -jar activeMQ-consumer-1.0-SNAPSHOT.jar consumes the sent messages and prints on console.
 6. Methods for sending messages as String and DTO added.
 7. Actuator endpoints configured in application.properties
+<div id="visits">...</div>
+```javascript
+function cb(response) {
+    document.getElementById('visits').innerText = response.value;
+}
+```
+<script async src="https://api.countapi.xyz/hit/https://github.com/RSaravanaPrasad/SpringBoot-CLR-JMS-ActiveMQ/visits?callback=cb"></script>
