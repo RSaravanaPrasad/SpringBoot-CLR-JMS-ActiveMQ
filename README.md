@@ -7,10 +7,10 @@
 6. Methods for sending messages as String and DTO added.
 7. Actuator endpoints configured in application.properties
 
-<div id="visits">...</div>
-<script>
-function cb(response) {
+    <div id="visits">...</div>
+    <script>
+    function cb(response) {
     document.getElementById('visits').innerText = response.value;
-}
-</script>
-<script async src="https://api.countapi.xyz/hit/https://github.com/RSaravanaPrasad/SpringBoot-CLR-JMS-ActiveMQ/visits?callback=cb"></script>
+    }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/https://github.com/RSaravanaPrasad/SpringBoot-CLR-JMS-ActiveMQ/visits?callback=cb"></script>
