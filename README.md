@@ -1,4 +1,4 @@
-# SpringBoot-CLR-JMS-ActiveMQ
+# SpringBoot-CLR-JMS-ActiveMQ Producer Consumer clients
 1. Producer and Consumer modules can be separately cleaned and installed with maven in the same project.
 2. Producer and Consumer clients to be run in separate Command Line Runner windows/ processes. 
 3. Have ActiveMQ running. Create a queue "UI-queue" .
