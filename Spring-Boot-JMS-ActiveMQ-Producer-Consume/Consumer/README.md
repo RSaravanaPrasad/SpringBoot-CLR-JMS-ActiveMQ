@@ -1,4 +1,4 @@
-# Spring Boot JMS ActiveMQ Consumer
+# Spring Boot JMS ActiveMQ Consumer client
 
 1. ActiveMQ JMS Consumer built and run as a separate CommandLineRunner.
 2. ActiveMQ host is resolved from activemq.broker.url property configured in config.properties
