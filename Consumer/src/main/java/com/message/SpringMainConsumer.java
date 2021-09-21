@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringMainConsumer implements CommandLineRunner {
 
-	private static final Logger logger = LoggerFactory.getLogger(Consumer.class);
+	private static final Logger logger = LoggerFactory.getLogger(SpringMainConsumer.class);
 
 	@Autowired
 	Consumer consumer;
