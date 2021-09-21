@@ -14,7 +14,7 @@ import java.util.UUID;
 @SpringBootApplication
 public class SpringMainProducer implements CommandLineRunner {
 
-	private static final Logger logger = LoggerFactory.getLogger(Producer.class);
+	private static final Logger logger = LoggerFactory.getLogger(SpringMainProducer.class);
 
 	@Autowired
 	Producer producer;
@@ -25,7 +25,6 @@ public class SpringMainProducer implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		//producer.sendStudentJSONMessage();
-
 		producer.sendStudentObjectMessage(new Student("ID-189", "Hari", UUID.randomUUID().toString()), "<correlationIdAsDesigned>");
 	}
 }
