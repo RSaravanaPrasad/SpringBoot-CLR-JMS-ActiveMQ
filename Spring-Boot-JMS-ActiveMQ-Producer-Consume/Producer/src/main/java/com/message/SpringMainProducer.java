@@ -24,10 +24,7 @@ public class SpringMainProducer implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		// to send JSON String message
 		//producer.sendStudentJSONMessage();
-
-		// to send DTO message
 		producer.sendStudentObjectMessage(new Student("ID-189", "Hari", UUID.randomUUID().toString()), "<correlationIdAsDesigned>");
 	}
 }
