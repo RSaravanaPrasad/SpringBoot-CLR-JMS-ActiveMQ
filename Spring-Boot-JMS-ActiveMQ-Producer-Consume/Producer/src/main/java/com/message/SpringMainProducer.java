@@ -9,6 +9,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.UUID;
+
 @SpringBootApplication
 public class SpringMainProducer implements CommandLineRunner {
 
@@ -26,6 +28,6 @@ public class SpringMainProducer implements CommandLineRunner {
 		//producer.sendStudentJSONMessage();
 
 		// to send DTO message
-		producer.sendStudentObjectMessage(new Student("ID-189", "Hari", System.currentTimeMillis()+""), "<correlationIdAsDesigned>");
+		producer.sendStudentObjectMessage(new Student("ID-189", "Hari", UUID.randomUUID().toString()), "<correlationIdAsDesigned>");
 	}
 }
