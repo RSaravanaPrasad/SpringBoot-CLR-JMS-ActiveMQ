@@ -1,7 +1,7 @@
 # Spring Boot JMS ActiveMQ Consumer client
 
 1. ActiveMQ JMS Consumer built and run as a separate CommandLineRunner.
-2. ActiveMQ host is resolved from activemq.broker.url property configured in config.properties
+2. ActiveMQ host is resolved from BROKER_URL property configured in config.properties
 3. The DTO is constructed from received JSON message using ObjectMapper.This is when sending message as a JSON string.
 4. A DTO object message can also be received when @JmsListener is applied on consumeObjectMessage method
 5. Actuator endpoints configured in application.properties.
