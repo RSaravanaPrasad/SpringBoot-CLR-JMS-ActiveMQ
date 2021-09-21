@@ -11,6 +11,8 @@ import org.slf4j.LoggerFactory;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.message.dto.Student;
 
+import java.util.UUID;
+
 @Component
 public class Producer {
 
@@ -25,7 +27,7 @@ public class Producer {
 	// to send a JSON representation of DTO
 	public Student sendStudentJSONMessage() {
 		logger.info("Sending student JSON string message..");
-		Student student = new Student("ID-189", "Hari", System.currentTimeMillis()+"" );
+		Student student = new Student("ID-189", "Hari", UUID.randomUUID().toString()+"" );
 		try {
 			ObjectMapper mapper = new ObjectMapper();
 			String studentAsJson = mapper.writeValueAsString(student);
