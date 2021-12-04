@@ -34,7 +34,7 @@ public class Producer {
 			jmsTemplate.convertAndSend(queue, studentAsJson);
 			logger.info("Sent student JSON message.. "+studentAsJson);
 		} catch (Exception e) {
-			logger.error("Error sending message: "+e.getLocalizedMessage());
+			logger.error("Error sending JSON message: "+e.getLocalizedMessage());
 		}
 		return student;
 	}
@@ -47,9 +47,9 @@ public class Producer {
 					jmsAttrib.setJMSCorrelationID(correlationId);
 					return jmsAttrib;
 				});
-			logger.info("Sent message");
+			logger.info("Sent DTO message");
 		}
-		catch(Exception exc){logger.error("Error sending message: "+exc.getLocalizedMessage());}
+		catch(Exception exc){logger.error("Error sending DTO message: "+exc.getLocalizedMessage());}
 	}
 
 }
